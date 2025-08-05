@@ -61,5 +61,41 @@ Também parte da tabela já na 2FN e busca eliminar dependências transitivas, o
 
 ### 
 
-## Modelo não relacional
+## Modelo não relacional (JSON)
 
+
+```JSON
+    { 
+    "pedido_id": 5, 
+    "cliente": { 
+    }, 
+    "nome": "Kaio Anthony", 
+    "endereco": "Rua São João, 101" 
+    "itens": [ 
+    { 
+    "produto_id": 10, 
+    "nome": "Carderno de 10 materia", 
+    "quantidade": 2, 
+    "preco_total": 40.00 
+    }, 
+    { 
+    "produto_id": 11, 
+    "nome": "Lapiseira 0.7mm", 
+    "quantidade": 1, 
+    "preco_total": 9.80
+    },
+    {
+    "produto_id": 12,
+    "nome": "Caneta Bic", 
+    "quantidade": 4, 
+    "preco_total": 7.45
+    }
+  ] 
+} 
+```
+
+O modelo acima pode ser considerado não relacional, devido a não seguir as regras devidas que a relacional fala, porém na maioria das vezes, porque é mais vantajoso usar um Modelo não relacional? 
+
+ 1. Você pode armazenar documentos com estruturas diferentes dentro da mesma coleção. Não precisa definir um esquema fixo
+ 2. Consegue ter uma leitura mais rapida
+ 3. Alta perfomance para grandes volumes de dados
