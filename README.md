@@ -4,9 +4,6 @@
 
 O conceito de banco de dados seria a coleta de informações ou dados que são armazenadas em um sistema de computador, normalmente são controlados por um sistema de gerenciamento.
 
-| Pedido_ID | Cliente_nome | Cliente_endereço | Produto_ID | Quantidade | Preço | 
-| --------- | ------------ | ---------------- | ---------- | ---------- | ----- |
-
 ## Banco relacional e não relacional
 
 Existem dois tipos de banco de dados, que são o relacional(SQL) e não relaciona(NoSQL).
@@ -18,7 +15,11 @@ As tabelas são representadas por uma situação no mundo real, as linhas sãos 
 
 Exemplo de banco relacional:
 
-![BANCO RELACIONAL](https://blog.debugeverything.com/wp-content/uploads/2021/04/banco-de-dados-relacional-tabela-usuario.jpg)
+| Pedido_ID | Cliente_nome | Cliente_endereço | Produto_ID | Quantidade | Preço | 
+| --------- | ------------ | ---------------- | ---------- | ---------- | ----- |
+|     1     |  João Silva  |    Rua A, 123    |     10     |   Caneta   |  4,00 |
+|     1     |  João Silva  |    Rua A, 123    |     11     |   Lápis    |  2,00 |
+|     2     |  Maria Souza |    Rua B, 123    |     10     |   Caneta   |  4,00 |
 
 ### 
 
