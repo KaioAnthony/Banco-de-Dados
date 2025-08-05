@@ -4,6 +4,8 @@
 
 O conceito de banco de dados seria a coleta de informações ou dados que são armazenadas em um sistema de computador, normalmente são controlados por um sistema de gerenciamento.
 
+| Pedido_ID | Cliente_nome | Cliente_endereço | Produto_ID | Quantidade | Preço | 
+
 ## Banco relacional e não relacional
 
 Existem dois tipos de banco de dados, que são o relacional(SQL) e não relaciona(NoSQL).
@@ -39,9 +41,23 @@ A normalização se foca na toma medidas contra problem de repetição e atualiz
 
 Primeira forma:
 
-A primeira forma se trata de repetições que são armazenadas de forma unica
+Exige que todos os dados em uma tabela sejam atômicos, ou seja, cada campo deve conter apenas um valor e não listas ou repetições dentro da célula. Isso garante que a tabela esteja organizada de forma simples e clara, com uma estrutura tabular verdadeira.
 
 ![](https://media.discordapp.net/attachments/1341900461396988094/1402261144252579870/CE3213B3-401F-4DBB-8C53-E58BB58F72B4.png?ex=689344f5&is=6891f375&hm=8daa4be79450f55b2a13f9c74121eba0f56940ef9ce20c4a478c3f291084b2cc&=&format=webp&quality=lossless)
 
-Segunda forma
+Segunda forma:
+
+A segunda forma normal (2FN) parte do princípio de que a tabela já está na 1FN e exige que todos os campos que não são chave dependam da chave primária por completo. Isso é especialmente importante quando a chave primária é composta por mais de um campo. Assim, elimina-se a chamada dependência parcial.
+
+![](https://media.discordapp.net/attachments/1341900461396988094/1402262238986768394/D8DA001B-0392-4293-8D95-871313C27561.png?ex=689345fa&is=6891f47a&hm=78b08e452077f0fc991227c8f6e055a010190bbc3c9e698301a688bcbba173c1&=&format=webp&quality=lossless)
+
+Terceira forma:
+
+Também parte da tabela já na 2FN e busca eliminar dependências transitivas, ou seja, quando um campo depende de outro que não é a chave primária. A tabela fica mais enxuta, sem dados redundantes ou mal relacionados.
+
+![](https://media.discordapp.net/attachments/1341900461396988094/1402272288359055401/1A9D4681-D760-4761-93D3-5C6B8A4FFA19.png?ex=68934f56&is=6891fdd6&hm=6c765ca132da12d634ad1406cb7b85f1418317fd8c7a61315c8a7fd29a68dd79&=&format=webp&quality=lossless)
+
+### 
+
+## Modelo não relacional
 
