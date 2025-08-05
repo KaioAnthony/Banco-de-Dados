@@ -5,7 +5,7 @@
 O conceito de banco de dados seria a coleta de informações ou dados que são armazenadas em um sistema de computador, normalmente são controlados por um sistema de gerenciamento.
 
 | Pedido_ID | Cliente_nome | Cliente_endereço | Produto_ID | Quantidade | Preço | 
-| --------- |
+| --------- | ------------ | ---------------- | ---------- | ---------- | ----- |
 
 ## Banco relacional e não relacional
 
